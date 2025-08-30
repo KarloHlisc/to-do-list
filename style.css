@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+input {
+  padding: 0.5rem;
+  width: 250px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+textarea {
+  padding: 0.5rem;
+  width: 250px;
+  font-size: 1rem;
+  resize: vertical; /* erlaubt nur vertikales Vergrößern */
+  overflow-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
+  box-sizing: border-box; /* Padding + Border in Breite einrechnen */
+  font-family: inherit;
+}
