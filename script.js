@@ -4,7 +4,6 @@ const liste = document.getElementById("todoListe");
 
 let todos = [];
 
-// 1. Aufgabe hinzufügen
 button.addEventListener("click", () => {
   const text = input.value.trim();
   if (text === "") return;
@@ -20,14 +19,12 @@ button.addEventListener("click", () => {
   zeigeTodos();
 });
 
-// 2. Enter-Taste auch zum Hinzufügen
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     button.click();
   }
 });
 
-// 3. Aufgaben anzeigen
 function zeigeTodos() {
   liste.innerHTML = "";
 
@@ -58,7 +55,6 @@ function zeigeTodos() {
   });
 }
 
-// 4. Speicherfunktionen
 function speichereTodos() {
   localStorage.setItem("meineTodos", JSON.stringify(todos));
 }
@@ -71,5 +67,4 @@ function ladeTodos() {
   }
 }
 
-// 5. Direkt beim Start laden
 ladeTodos();
