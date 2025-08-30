@@ -49,8 +49,8 @@ textarea {
   padding: 0.5rem;
   width: 250px;
   font-size: 1rem;
-  resize: vertical; /* erlaubt nur vertikales Vergrößern */
-  overflow-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
-  box-sizing: border-box; /* Padding + Border in Breite einrechnen */
+  resize: vertical; 
+  overflow-wrap: break-word; 
+  box-sizing: border-box; 
   font-family: inherit;
 }
